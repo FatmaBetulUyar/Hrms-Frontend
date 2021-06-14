@@ -25,8 +25,8 @@ export default function EmployerList() {
                 </Table.Header>
 
                 <Table.Body>
-                    {
-                        employers.map(employer => (
+                    
+                        {employers.map(employer => (
                             <Table.Row key={employer.id}>
                                 <Table.Cell>{employer.email}</Table.Cell>
                                 <Table.Cell>{employer.password}</Table.Cell>
@@ -34,8 +34,8 @@ export default function EmployerList() {
                                 <Table.Cell>{employer.phoneNumber}</Table.Cell>
                                 <Table.Cell>{employer.webAddress}</Table.Cell>
                             </Table.Row>
-                        ))
-                    }
+                        ))}
+                    
 
                 </Table.Body>
 
