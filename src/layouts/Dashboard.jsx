@@ -1,6 +1,8 @@
 import React from 'react'
 import JobSeekerList from '../pages/JobSeekerList'
 import EmployerList from '../pages/EmployerList'
+import SystemPersonelList from '../pages/SystemPersonelList'
+import JobTitleList from '../pages/JobTitleList'
 import { Grid } from 'semantic-ui-react'
 import Sidebar from './Sidebar'
 export default function Dashboard() {
@@ -12,11 +14,12 @@ export default function Dashboard() {
                         <Sidebar></Sidebar>
                     </Grid.Column>
                     <Grid.Column width={12}>
-                      <EmployerList></EmployerList>
+                        <EmployerList></EmployerList>
+                        <JobSeekerList></JobSeekerList>
+                        <SystemPersonelList></SystemPersonelList>
+                        <JobTitleList></JobTitleList>
                     </Grid.Column>
-
                 </Grid.Row>
-
             </Grid>
 
         </div>

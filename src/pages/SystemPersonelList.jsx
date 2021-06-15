@@ -1,11 +1,13 @@
 import React from 'react'
-import SystemPersonelList from './SystemPersonelList'
+import { useEffect, useState } from "react";
+import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import SystemPersonelService from '../services/systemPersonelService' 
+
 export default function SystemPersonelList() {
-    const [systemPersonels, setsystemPersonels] = useState([])
+    const [systemPersonels, setSystemPersonels] = useState([])
     useEffect(()=>{
         let systemPersonelService=new SystemPersonelService()
-        systemPersonelService.getSystemPersonels().then(result=>setsystemPersonels(result.data.data))
+        systemPersonelService.getSystemPersonels().then(result=>setSystemPersonels(result.data.data))
     },[])
 
     return (

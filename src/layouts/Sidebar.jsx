@@ -5,16 +5,16 @@ export default function Sidebar() {
         <div>
             <Menu pointing vertical>
                 <Menu.Item
-                    name='Anasayfa'
-
+                    name='Is Arayanlar'
                 />
                 <Menu.Item
-                    name='messages'
-
+                    name='Is Verenler'
                 />
                 <Menu.Item
-                    name='friends'
-
+                    name='Is Pozisyonları'
+                />
+                <Menu.Item
+                    name='CV'
                 />
             </Menu>
         </div>

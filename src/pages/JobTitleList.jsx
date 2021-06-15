@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect,useState } from 'react'
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import JobTitleService from '../services/jobTitleService'
 export default function JobTitleList() {
@@ -6,7 +6,7 @@ export default function JobTitleList() {
     const [jobTitles, setJobTitles] = useState([])
     useEffect(()=>{
         let jobTitleService=new JobTitleService()
-        jobTitleService.getJobTitles().then(result=>setjobTitles(result.data.data))
+        jobTitleService.getJobTitles().then(result=>setJobTitles(result.data.data))
     },[])
 
     return (
